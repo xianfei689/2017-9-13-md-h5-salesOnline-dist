@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /**
  * [南航明珠商城首页h5样式]
  * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
@@ -41,6 +42,7 @@
 }
 
 
+
 /*mui重写*/
 
 
@@ -77,6 +79,7 @@
     left: 0;
     width: 100%;
 }
+
 
 
 /*common font*/
@@ -377,19 +380,41 @@ body {
 
 .fontDiv {
     width: 100%;
-    height: 200px;
-    /*background: red;*/
     margin-top: 20px;
     text-align: left;
 }
 
-.brandOne{
-      font-size: 13px;
-  display: inline-block;
-  border:1px solid #F0F0F0;
-  width: 32%;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  margin-bottom: 10px;
+.brandOne {
+    font-size: 13px;
+    display: inline-block;
+    border: 1px solid #F0F0F0;
+    width: 32%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#fontDiv2{
+    display: none;
+        padding-left: 3px;
+        padding-top: 3px;
+    background-color: #F0F2F5;
+}
+.fontDiv .active {
+    border: 1px solid #426fc5;
+    color: #426fc5;
+    background-color: #CBD4E5;
+}
+
+#fontDiv2 .brandOne{
+    width: 32%;
+
+}
+#fontDiv2 img{
+    width: 32%;
+    margin-bottom: 3px;
+    border: 1px solid transparent;
+}
+#fontDiv2 .active{
+    border-color: #acb1b5;
 }

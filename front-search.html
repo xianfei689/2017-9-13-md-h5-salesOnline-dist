@@ -48,8 +48,8 @@
             <input type="text" class="input inputTxt" name="" placeholder="请输入关键词">
             <img src="md/images/new/magnifier.png" alt="" class="searchImgBlok">
         </div>
-        <div class="fontDiv">
-            <span class="brandOne">全部</span>
+        <div class="fontDiv" id="fontDiv">
+            <span class="brandOne active">全部</span>
             <span class="brandOne">润滑油</span>
             <span class="brandOne">阻力油</span>
             <span class="brandOne">变速箱油</span>
@@ -63,6 +63,14 @@
             <span class="brandOne">润华膏</span>
             <span class="brandOne">深度护养</span>
             <span class="brandOne">空调清洗</span>
+        </div>
+        <div class="fontDiv" id="fontDiv2">
+            <img src="md/images/new/goods1.png" alt="" class="active">
+            <img src="md/images/new/goods2.png" alt="">
+            <img src="md/images/new/goods3.png" alt="">
+            <img src="md/images/new/goods6.png" alt="">
+            <img src="md/images/new/goods5.png" alt="">
+            <img src="md/images/new/goods6.png" alt="">
         </div>
         <input type="button" name="确定" class="searchBtn" value="确定" onclick="window.location.href='searchResult.html'">
     </div>
@@ -113,10 +121,26 @@ $('.search-ct1').click(function() {
     if ($('.search-ct3').hasClass('active')) {
         $('.search-content2').hide();
         $('.search-content3').show();
+        $("#fontDiv2").hide();
+        $("#fontDiv").show();
+
     } else {
         $('.search-content3').hide();
         $('.search-content2').show();
+        $("#fontDiv").hide();
+        $("#fontDiv2").show();
     }
+});
+
+$("#fontDiv").find(".brandOne").unbind().click(function() {
+    $(this).parent().find(".brandOne").removeClass("active");
+    $(this).addClass("active");
+});
+
+
+$("#fontDiv2").find("img").unbind().click(function() {
+    $(this).parent().find("img").removeClass("active");
+    $(this).addClass("active");
 });
 </script>
 
