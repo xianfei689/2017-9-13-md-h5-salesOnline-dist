@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+/**
+ * [南航明珠商城首页h5样式]
+ * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-03-29T11:37:32+0800
+ */
+
+
+/*mui重写*/
+
+.mui-slider-indicator .mui-active.mui-indicator {
+    background: #4da6e6;
+}
+
+.mui-slider-indicator .mui-indicator {
+    margin: 0;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: none;
+}
+
+.mui-slider-indicator {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.mui-slider {
+    height: 130px;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item>a:not(.mui-control-item) {
+    height: 100%;
+}
+
+.mui-slider .mui-slider-group.mui-slider-loop {
+    display: block;
+    height: 100%;
+}
+
+
+/*mui重写*/
+
+
+/*common font*/
+
+.font-red {
+    color: #ee4e4e;
+}
+
+.font-red2 {
+    color: #e60a51;
+}
+
+.font-red3 {
+    color: #db0048;
+}
+
+.font-pick {
+    color: #ed6390;
+}
+
+.font-grey {
+    color: #757575;
+}
+
+.font-blue {
+    color: #2f8bcd;
+}
+
+.top-div {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/*common font*/
+
+header {
+    width: 100%;
+    height: 44px;
+    background-color: #2f8bcd;
+    position: relative;
+}
+
+header p {
+    text-align: center;
+    line-height: 44px;
+    font-size: 15px;
+    color: #fff;
+}
+
+header .backImg {
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    left: 15px;
+    bottom: 15px;
+}
+
+#slide-gb {
+    width: 100%;
+    height: 130px;
+    margin-top: 44px;
+}
+
+.sdiv1 {
+    height: 5px;
+    width: 100%;
+    background: #eeeeee;
+}
+
+.sdiv2 {
+    background: #fff;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.sdiv2 li {
+    display: inline-block;
+    width: 17%;
+}
+
+.sdiv2 ul {
+    text-align: center;
+}
+
+.sdiv2 a {
+    display: inline-block;
+    width: 40px;
+    height: 60px;
+}
+
+.sdiv2 img {
+    width: 41px;
+    height: 60px;
+}
+
+.sdiv3 {
+    width: 100%;
+    background: #eeeeee;
+    height: 36px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.sdiv3 img {
+    width: 103px;
+    height: 14px;
+}
+
+.sdiv4 {
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    margin-bottom: 49px;
+}
+
+.sdiv4 .good-one {
+    width: 50px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    margin-right: 4px;
+}
+
+.sdiv4 .good-col {
+    display: -moz-box;
+    display: -webkit-box;
+    text-align: center;
+}
+
+.sdiv4 img {
+    width: 100%;
+}
+
+.sdiv4 .gp1 {
+    color: #454545;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 4px;
+}
+
+.sdiv4 .gp2 {
+    color: #757575;
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+
+.navi-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    height: 49px;
+    background: #fff;
+    display: -moz-box;
+    display: -webkit-box;
+    font-size: 10px;
+    color: #757575;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: 0px 3px 9px 2px rgba(0, 0, 0, 0.12);
+}
+
+.navi-bottom .navi-one {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 50px;
+    position: relative;
+}
+
+.navi-bottom img {
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+}
+
+.navi-bottom span {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.navi-bottom .index-frant {
+    position: relative;
+    right: 2px;
+}
+
+
+
+.search-div1 {
+    height: 101px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.search-div1 .search-ct1 {
+    width: 100%;
+    color: #2f8bcd;
+}
+
+.search-div1 .input {
+    color: #8290a0;
+}
+
+.search-div1 .search-ct2 {
+    background-color: #FFF;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    radius: 0;
+    border: 1px solid #2f8bcd;
+}
+
+.search-div1 .search-ct3 {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.search-div1 .search-ct4 {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.search-div1 .inputTxt {
+    border: none;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.search-div1 .search-content2 {
+    display: none;
+    border-bottom: 1px solid #d6dee4;
+    border-top: 1px solid #d6dee4;
+    padding-top: 12px;
+    margin-top: 50px;
+    height: 47px;
+    text-align: left;
+    color: #08234f;
+    font-size: 16px;
+}
+
+.search-div1 .search-content3 {
+    border-bottom: 1px solid #d6dee4;
+    border-top: 1px solid #d6dee4;
+    padding-top: 12px;
+    margin-top: 50px;
+    height: 47px;
+    text-align: left;
+    color: #08234f;
+    font-size: 16px;
+}
+
+.search-div1 .active {
+    color: #fff;
+    background-color: #2f8bcd;
+}
+
+.search-div1 .inputLen {
+    border: none;
+    width: 46%;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
+.search-div1 .inputLen2 {
+    border: none;
+    width: 46%;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    padding-left: 30px;
+}
+
+.search-div1 input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.search-div1 input::-moz-placeholder {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.search-div1 .sc3-sp {
+    color: #8290a0;
+    font-size: 16px;
+}
+
+.search-div1 .searchBtn {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 17px;
+    background-color: #d1d9e1;
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+    radius: 5px;
+    -webkit-border-radius: 32px;
+    margin-top: 33px;
+}
+
+body {
+    background-color: #FFF;
+}
+
+.searchImgBlok {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 7px;
+}
+
+.fontDiv {
+    width: 100%;
+    height: 200px;
+    /*background: red;*/
+    margin-top: 20px;
+    text-align: left;
+}
+
+.brandOne{
+      font-size: 13px;
+  display: inline-block;
+  border:1px solid #F0F0F0;
+  width: 32%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+}

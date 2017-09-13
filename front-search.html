@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>分类</title>
+    <meta charset="UTF-8">
+    <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 忽略将页面中的数字识别为电话号码 忽略Android平台中对邮箱地址的识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- winphone系统a、input标签被点击时产生的半透明灰色背景 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 设置Web应用是否以全屏模式运行。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Web App的状态栏（屏幕顶部栏）的样式  如果设置为blank，则状态栏会有一个黑色的背景 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="md/css/normalize.css">
+    <link rel="stylesheet" href="md/css/reset.css">
+    <link rel="stylesheet" href="md/css/search.css">
+    <link rel="stylesheet" href="md/css/zui.css">
+</head>
+
+<body>
+    <div class="top-div">
+        <header>
+            <p>搜索</p><img src="md/images/index/back.png" class="backImg" onclick="window.location.href='index.html'">
+        </header>
+    </div>
+    <div class="search-div1" style="margin-top: 45px;">
+        <div class="search-ct1">
+            <span class="search-ct3 search-ct2 active">产品</span>
+            <span class="search-ct4 search-ct2 ">品牌</span>
+        </div>
+        <div class="search-content2  search-block">
+            <!-- <input type="text" class="input inputLen" placeholder="请输入最小里程数">至
+            <input type="text" class="input inputLen2" placeholder="请输入最大里程数"> -->
+            <span class="sc3-sp">搜索品牌</span>
+            <input type="text" class="input inputTxt" name="" placeholder="请输入关键词">
+            <img src="md/images/new/magnifier.png" alt="" class="searchImgBlok">
+        </div>
+        <div class="search-content3">
+            <span class="sc3-sp">搜索产品</span>
+            <input type="text" class="input inputTxt" name="" placeholder="请输入关键词">
+            <img src="md/images/new/magnifier.png" alt="" class="searchImgBlok">
+        </div>
+        <div class="fontDiv">
+            <span class="brandOne">全部</span>
+            <span class="brandOne">润滑油</span>
+            <span class="brandOne">阻力油</span>
+            <span class="brandOne">变速箱油</span>
+            <span class="brandOne">清洁剂</span>
+            <span class="brandOne">防冻剂</span>
+            <span class="brandOne">发动机清洗油</span>
+            <span class="brandOne">刹车片</span>
+            <span class="brandOne">滤清器</span>
+            <span class="brandOne">添加剂</span>
+            <span class="brandOne">齿轮油</span>
+            <span class="brandOne">润华膏</span>
+            <span class="brandOne">深度护养</span>
+            <span class="brandOne">空调清洗</span>
+        </div>
+        <input type="button" name="确定" class="searchBtn" value="确定" onclick="window.location.href='searchResult.html'">
+    </div>
+    <div class="navi-bottom">
+        <div class="navi-one" onclick="window.location.href='front-index.html'">
+            <img src="md/images/index/navi12.png">
+            <br>
+            <span class="index-frant">首页</span>
+        </div>
+        <div class="navi-one">
+            <img src="md/images/index/navi21.png">
+            <br>
+            <span class="font-pick">分类</span>
+        </div>
+        <div class="navi-one" onclick="window.location.href='front-shoppingcar.html'">
+            <img src="md/images/index/navi32.png">
+            <br>
+            <span class="font-grey">购物车</span>
+        </div>
+        <div class="navi-one" onclick="window.location.href='front-memberCenter.html'">
+            <img src="md/images/index/navi42.png">
+            <br>
+            <span class="font-grey">我的</span>
+        </div>
+    </div>
+</body>
+<script src="md/lib/jQuery/3.2.1/jquery.min.js"></script>
+<script src="md/lib/fastclick/fastclick.js"></script>
+<script src="md/lib/mui/mui.min.js"></script>
+<script src="md/js/shoppingcar.js"></script>
+<script src="md/lib/zui/zui.min.js"></script>
+<script type="text/javascript">
+/**
+ * [description]
+ * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-01T09:22:30+0800
+ * @param     {[type]}                 )                      {                     FastClick.attach(document.body);} [description]
+ * @return    {[type]}                                        [description]
+ */
+$(function() {
+    FastClick.attach(document.body);
+});
+
+
+$('.search-ct1').click(function() {
+    $(this).find('.active').removeClass('active').siblings().addClass('active');
+    if ($('.search-ct3').hasClass('active')) {
+        $('.search-content2').hide();
+        $('.search-content3').show();
+    } else {
+        $('.search-content3').hide();
+        $('.search-content2').show();
+    }
+});
+</script>
+
+</html>
